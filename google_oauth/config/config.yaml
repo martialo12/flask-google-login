@@ -1,0 +1,15 @@
+FLASK_APP_CONFIGURATION:
+  secret_key: "supersecretkey2021"
+  port: 5000
+  debug: True
+  host: "localhost"
+
+DB_CONFIG:
+  SQLALCHEMY_DATABASE_URI: 'sqlite://oauth2.db'
+  SQLALCHEMY_TRACK_MODIFICATIONS: True
+
+GOOGLE_CONFIG:
+  google_discovery_url: "https://accounts.google.com/.well-known/openid-configuration"
+  google_redirect_uri: "http://127.0.0.1:5000/login/callback"
+  google_client_id: ""
+  google_client_secret: ""
